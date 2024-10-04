@@ -5,12 +5,21 @@ baseurl: ""
 url: "https://StefanoVidesott.github.io"
 
 # Theme
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 # Social
 author:
   name: "Stefano Videsott"
-  email: "your-email@example.com"
+  email: "ste.videsott@gmail.com"
+  instagram: "stefano.videsott"
+  discord: "apeiron_cz"
 
 # Default settings
 defaults:

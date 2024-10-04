@@ -11,7 +11,7 @@ Welcome to my personal site! I’m a Computer Science student at the University 
 - 🎓 Studying Scienze e Tecnologie Informatiche
 - 💻 Working as a developer at Airpim SRL
 - 🌱 Learning about full-stack development, AI, and DevOps
-- 📫 [Get in touch](mailto:your-email@example.com)
+- 📫 [Get in touch](mailto:ste.videsott@gmail.com)
 
 Feel free to explore my projects below!
 
