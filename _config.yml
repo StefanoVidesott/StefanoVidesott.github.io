@@ -1,0 +1,21 @@
+# Site settings
+title: "Stefano Videsott"
+description: "Personal website and portfolio of Stefano Videsott"
+baseurl: ""
+url: "https://StefanoVidesott.github.io"
+
+# Theme
+theme: minimal-mistakes-jekyll
+
+# Social
+author:
+  name: "Stefano Videsott"
+  email: "your-email@example.com"
+
+# Default settings
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
