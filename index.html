@@ -1,401 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stefano Videsott - Portfolio</title>
-  <meta name="description" content="Stefano Videsott's Personal Portfolio Website">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- CSS Styles -->
-  <style>
-    /* Reset CSS */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stefano Videsott - Portfolio</title>
+    <meta name="description" content="Stefano Videsott's Personal Portfolio Website">
 
-    /* Typography */
-    body {
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      background-color: #f0f2f5;
-      color: #333;
-    }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
-    h1, h2, h3 {
-      font-family: 'Montserrat', sans-serif;
-      margin-bottom: 20px;
-      color: #2c3e50;
-    }
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    a {
-      color: #3498db;
-      text-decoration: none;
-    }
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Container */
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px 0;
-    }
-
-    /* Header */
-    header {
-      background: #2c3e50;
-      color: #fff;
-      padding: 60px 0;
-      text-align: center;
-      position: relative;
-    }
-
-    header .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid #fff;
-      object-fit: cover;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 20px;
-      color: #bdc3c7;
-    }
-
-    /* Navigation */
-    nav {
-      background: #34495e;
-      padding: 10px 0;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: #ecf0f1;
-      font-size: 16px;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #3498db;
-    }
-
-    /* Sections */
-    section {
-      padding: 60px 0;
-    }
-
-    /* About Section */
-    #about {
-      background: #fff;
-      text-align: center;
-    }
-
-    #about .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #about p {
-      max-width: 800px;
-      margin-top: 20px;
-      font-size: 18px;
-      color: #555;
-    }
-
-    /* Skills Section */
-    #skills {
-      background: #ecf0f1;
-    }
-
-    #skills .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    #skills .skill {
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 10px;
-      width: 200px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    #skills .skill i {
-      font-size: 40px;
-      color: #3498db;
-      margin-bottom: 15px;
-    }
-
-    #skills .skill h3 {
-      margin-bottom: 10px;
-      color: #2c3e50;
-    }
-
-    /* Projects Section */
-    #projects {
-      background: #fff;
-    }
-
-    #projects .projects-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    #projects .project {
-      background: #f9f9f9;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 15px;
-      width: 300px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    #projects .project:hover {
-      transform: translateY(-10px);
-    }
-
-    #projects .project img {
-      width: 100%;
-      border-radius: 5px;
-      margin-bottom: 15px;
-    }
-
-    #projects .project h3 {
-      margin-bottom: 10px;
-      color: #2c3e50;
-    }
-
-    #projects .project p {
-      color: #555;
-      margin-bottom: 15px;
-    }
-
-    #projects .project a {
-      display: inline-block;
-      background: #3498db;
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-
-    #projects .project a:hover {
-      background: #2980b9;
-    }
-
-    /* Contact Section */
-    #contact {
-      background: #ecf0f1;
-      text-align: center;
-    }
-
-    #contact .contact-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #contact .contact-info div {
-      margin: 10px 0;
-      font-size: 18px;
-      color: #555;
-    }
-
-    #contact .social-links a {
-      color: #34495e;
-      margin: 0 10px;
-      font-size: 24px;
-      transition: color 0.3s;
-    }
-
-    #contact .social-links a:hover {
-      color: #3498db;
-    }
-
-    /* Footer */
-    footer {
-      background: #2c3e50;
-      color: #bdc3c7;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 14px;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-      }
-
-      #skills .skills-container, #projects .projects-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      #about .content {
-        padding: 0 20px;
-      }
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <img src="assets/images/profile.jpg" alt="Stefano Videsott" class="profile-img">
-    <h1>Stefano Videsott</h1>
-    <p>Computer Science Student | Software Developer at Airpim SRL</p>
-  </header>
+    <!-- Header Section -->
+    <header>
+        <img src="assets/images/profile.jpg" alt="Stefano Videsott" class="profile-img">
+        <h1>Stefano Videsott</h1>
+        <p>Computer Science Student | Software Developer at Airpim SRL</p>
+    </header>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="content">
-        <p>
-          Hi, I'm <strong>Stefano Videsott</strong>, a passionate computer science student at the University of Trento and a software developer at Airpim SRL. I specialize in developing innovative software solutions and am always eager to learn and explore new technologies in the IT world.
-        </p>
-        <p>
-          With a solid foundation in programming languages like Python, Java, and JavaScript, I enjoy building web and mobile applications that solve real-world problems. My journey in tech is driven by curiosity and a commitment to continuous improvement.
-        </p>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="content">
+                <p>
+                Hi, I'm <strong>Stefano Videsott</strong>, a passionate computer science student at the University of Trento and a software developer at Airpim SRL. I specialize in developing innovative software solutions and am always eager to learn and explore new technologies in the IT world.
+                </p>
+                <p>
+                With a solid foundation in programming languages like Python, Java, and JavaScript, I enjoy building web and mobile applications that solve real-world problems. My journey in tech is driven by curiosity and a commitment to continuous improvement.
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>My Skills</h2>
-      <div class="skills-container">
-        <div class="skill">
-          <i class="fas fa-code"></i>
-          <h3>Programming</h3>
-          <p>Proficient in Python, Java, JavaScript, and C++.</p>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Proficient in Python, Java, JavaScript, and C++.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Experienced with HTML, CSS, React, and Node.js.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>Knowledgeable in MySQL, MongoDB, and PostgreSQL.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Computing</h3>
+                    <p>Familiar with AWS, Docker, and Kubernetes.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Development</h3>
+                    <p>Building apps with React Native and Flutter.</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-robot"></i>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Working on machine learning and AI projects.</p>
+                </div>
+            </div>
         </div>
-        <div class="skill">
-          <i class="fas fa-laptop-code"></i>
-          <h3>Web Development</h3>
-          <p>Experienced with HTML, CSS, React, and Node.js.</p>
-        </div>
-        <div class="skill">
-          <i class="fas fa-database"></i>
-          <h3>Databases</h3>
-          <p>Knowledgeable in MySQL, MongoDB, and PostgreSQL.</p>
-        </div>
-        <div class="skill">
-          <i class="fas fa-cloud"></i>
-          <h3>Cloud Computing</h3>
-          <p>Familiar with AWS, Docker, and Kubernetes.</p>
-        </div>
-        <div class="skill">
-          <i class="fas fa-mobile-alt"></i>
-          <h3>Mobile Development</h3>
-          <p>Building apps with React Native and Flutter.</p>
-        </div>
-        <div class="skill">
-          <i class="fas fa-robot"></i>
-          <h3>Artificial Intelligence</h3>
-          <p>Working on machine learning and AI projects.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <!-- Project 1 -->
-        <div class="project">
-          <img src="assets/images/project1.png" alt="Project 1">
-          <h3>Project One</h3>
-          <p>A web application that streamlines task management using React and Node.js.</p>
-          <a href="https://github.com/StefanoVidesott/project-one" target="_blank">View on GitHub</a>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project">
+                    <img src="assets/images/project-air_force_1943.png" alt="Air Force 1943">
+                    <h3>Air Force 1943</h3>
+                    <p>A web application that streamlines task management using React and Node.js.</p>
+                    <a href="https://weatherlight.itch.io/airforce-1943" target="_blank">View on itch.io</a>
+                </div>
+                <!-- Project 2 -->
+                <!-- <div class="project">
+                    <img src="assets/images/project2.png" alt="Project 2">
+                    <h3>Project Two</h3>
+                    <p>A mobile app developed with React Native for tracking personal finances.</p>
+                    <a href="https://github.com/StefanoVidesott/project-two" target="_blank">View on GitHub</a>
+                </div> -->
+                <!-- Project 3 -->
+                <!-- <div class="project">
+                    <img src="assets/images/project3.png" alt="Project 3">
+                    <h3>Project Three</h3>
+                    <p>An AI-powered chatbot built with Python and TensorFlow.</p>
+                    <a href="https://github.com/StefanoVidesott/project-three" target="_blank">View on GitHub</a>
+                </div> -->
+            </div>
         </div>
-        <!-- Project 2 -->
-        <div class="project">
-          <img src="assets/images/project2.png" alt="Project 2">
-          <h3>Project Two</h3>
-          <p>A mobile app developed with React Native for tracking personal finances.</p>
-          <a href="https://github.com/StefanoVidesott/project-two" target="_blank">View on GitHub</a>
-        </div>
-        <!-- Project 3 -->
-        <div class="project">
-          <img src="assets/images/project3.png" alt="Project 3">
-          <h3>Project Three</h3>
-          <p>An AI-powered chatbot built with Python and TensorFlow.</p>
-          <a href="https://github.com/StefanoVidesott/project-three" target="_blank">View on GitHub</a>
-        </div>
-        <!-- Add more projects as needed -->
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <div class="contact-info">
-        <div><i class="fas fa-envelope"></i> <a href="mailto:stefano.videsott@example.com">stefano.videsott@example.com</a></div>
-        <div><i class="fas fa-phone"></i> +39 123 456 7890</div>
-        <div class="social-links">
-          <a href="https://github.com/StefanoVidesott" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/stefanovidesott" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://twitter.com/StefanoVidesott" target="_blank"><i class="fab fa-twitter"></i></a>
-          <!-- Add more social links as needed -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <div><i class="fas fa-envelope"></i> <a href="mailto:ste.videsott@gmail.com">ste.videsott@gmail.com</a></div>
+            <!-- <div><i class="fas fa-phone"></i> +39 123 456 7890</div> -->
+            <div class="social-links">
+                <a href="https://github.com/StefanoVidesott" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/stefano.videsott" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2024 Stefano Videsott. All rights reserved.
-  </footer>
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Stefano Videsott. All rights reserved.
+    </footer>
 
 </body>
 </html>
