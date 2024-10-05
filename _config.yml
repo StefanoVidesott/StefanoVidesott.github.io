@@ -5,7 +5,7 @@ baseurl: ""
 url: "https://StefanoVidesott.github.io"
 
 # Theme
-remote_theme: "mmistakes/minimal-mistakes"
+theme: jekyll-theme-minimal
 
 # Plugins
 plugins:
