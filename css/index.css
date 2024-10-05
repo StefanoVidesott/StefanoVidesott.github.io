@@ -182,6 +182,7 @@ section {
 /* Skills Section */
 #skills {
     background: #f0f2f5;
+    text-align: center;
 }
 
 #skills .skills-container {
@@ -225,6 +226,7 @@ section {
 /* Projects Section */
 #projects {
     background: #fff;
+    text-align: center;
 }
 
 #projects .projects-container {
