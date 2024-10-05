@@ -1,4 +1,11 @@
 /* Reset CSS */
+:root {
+    --primary-color: #e62d20;
+    --secondary-color: #92170e;
+    --button-color: #e62d20;
+    --button-hover-color: #c0271a;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,17 +23,17 @@ body {
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
-    color: #e62d20; /* Updated to match logo */
+    color: var(--primary-color);
 }
 
 a {
-    color: #e62d20; /* Updated to match logo */
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #c0271a; /* Slightly darker shade of logo color */
+    color: var(--primary-color);
     text-decoration: underline;
 }
 
@@ -40,7 +47,7 @@ a:hover {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #e62d20, #4ca1af); /* Updated first color to match logo */
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Updated first color to match logo */
     color: #fff;
     padding: 80px 0;
     text-align: center;
@@ -93,23 +100,23 @@ header p {
 
 .btn:hover {
     background: #fff;
-    color: #e62d20; /* Updated to match logo */
+    color: var(--primary-color);
 }
 
 .btn-primary {
-    background: #e62d20; /* Updated to match logo */
-    border-color: #e62d20; /* Updated to match logo */
+    background: var(--button-color);
+    border-color: var(--button-color);
     color: #fff;
 }
 
 .btn-primary:hover {
-    background: #c0271a; /* Slightly darker shade of logo color */
-    border-color: #c0271a;
+    background: var(--button-hover-color);
+    border-color: var(--button-hover-color);
 }
 
 /* Navigation */
 nav {
-    background: #e62d20; /* Updated to match logo */
+    background: var(--button-color);
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: sticky;
@@ -139,7 +146,7 @@ nav ul li a::after {
     display: block;
     width: 0;
     height: 2px;
-    background: #e62d20; /* Updated to match logo */
+    background: var(--button-color);
     transition: width .3s;
     position: absolute;
     bottom: -5px;
@@ -201,13 +208,13 @@ section {
 
 #skills .skill i {
     font-size: 40px;
-    color: #e62d20; /* Updated to match logo */
+    color: var(--button-color);
     margin-bottom: 15px;
 }
 
 #skills .skill h3 {
     margin-bottom: 10px;
-    color: #e62d20; /* Updated to match logo */
+    color: var(--button-color);
 }
 
 #skills .skill p {
@@ -252,7 +259,7 @@ section {
 
 #projects .project h3 {
     margin-bottom: 10px;
-    color: #e62d20; /* Updated to match logo */
+    color: var(--button-color);
     font-size: 22px;
 }
 
@@ -264,7 +271,7 @@ section {
 
 #projects .project a {
     align-self: flex-start;
-    background: #e62d20; /* Updated to match logo */
+    background: var(--button-color);
     color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
@@ -273,7 +280,7 @@ section {
 }
 
 #projects .project a:hover {
-    background: #c0271a; /* Slightly darker shade */
+    background: var(--button-hover-color);
 }
 
 /* Contact Section */
@@ -302,19 +309,19 @@ section {
 }
 
 #contact .social-links a {
-    color: #e62d20; /* Updated to match logo */
+    color: var(--button-color);
     margin: 0 10px;
     font-size: 28px;
     transition: color 0.3s ease;
 }
 
 #contact .social-links a:hover {
-    color: #c0271a; /* Slightly darker shade */
+    color: var(--button-hover-color);
 }
 
 /* Footer */
 footer {
-    background: #e62d20; /* Updated to match logo */
+    background: var(--button-color);
     color: #bdc3c7;
     text-align: center;
     padding: 20px 0;
