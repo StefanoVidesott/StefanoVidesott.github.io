@@ -5,47 +5,39 @@ title: About
 
 # About Me
 
-Hello, I'm **Stefano Videsott**, a dedicated computer science student at the University of Trento and a software developer at Airpim SRL. My journey in the tech world began with a fascination for how software can solve complex problems and improve everyday life.
+Hello, I'm **Stefano Videsott**, a passionate computer science student at the University of Trento and a software developer at Airpim SRL. I specialize in developing innovative software solutions and I'm always eager to learn and explore new technologies in the IT world.
+With a solid foundation in programming languages like C++, C#, Python, Java, and JavaScript, I enjoy building web and mobile applications that solve real-world problems. My journey in tech is driven by curiosity and a commitment to continuous improvement.
+When I'm not coding, I love contributing to open-source projects, exploring the latest in AI and machine learning, and sharing my knowledge with the community through tutorials and blog posts.
 
 ## Education
 
 - **Bachelor of Science in Computer Science**
-  - *University of Trento*, 2021 - Present
-  - Relevant Coursework: Data Structures, Algorithms, Web Development, Artificial Intelligence
+  - *University of Trento*, 2024 - Present
+  - Relevant Coursework: Data Structures, Algorithms, Web Development
 
 ## Professional Experience
 
 - **Software Developer**
-  - *Airpim SRL*, June 2023 - Present
-  - Developing web applications using React and Node.js
+  - *Airpim SRL*, June 2024 - Present
+  - Developing web applications and CMS using Python
   - Collaborating with cross-functional teams to deliver high-quality software solutions
 
 ## Projects
 
 - **Project One**
-  - A web application for task management built with React and Node.js. [GitHub](https://github.com/StefanoVidesott/project-one)
-
-- **Project Two**
-  - A mobile app for personal finance tracking developed with React Native. [GitHub](https://github.com/StefanoVidesott/project-two)
-
-- **Project Three**
-  - An AI-powered chatbot created using Python and TensorFlow. [GitHub](https://github.com/StefanoVidesott/project-three)
+  - I participated in the development of Air Force 1943 at the age of 15 while in high school[itch.io](https://weatherlight.itch.io/airforce-1943)
 
 ## Skills
 
-- **Programming Languages:** Python, Java, JavaScript, C++
-- **Web Development:** HTML, CSS, React, Node.js
-- **Databases:** MySQL, MongoDB, PostgreSQL
-- **Tools & Technologies:** Git, Docker, AWS, Kubernetes
-- **Mobile Development:** React Native, Flutter
-- **Artificial Intelligence:** Machine Learning, TensorFlow
+- **Programming Languages:** C++, C#, Python, Java, JavaScript
+- **Web Development:** HTML, CSS, Jinja
+- **Databases:** MySQL, MongoDB
+- **Tools & Technologies:** Git, Docker
 
 ## Interests
 
-- **Artificial Intelligence & Machine Learning**
 - **Cloud Computing & DevOps**
 - **Open Source Contribution**
 - **Blockchain Technology**
 
 Feel free to explore my [GitHub](https://github.com/StefanoVidesott) to see more of my work or [Contact Me](#contact) directly!
-
