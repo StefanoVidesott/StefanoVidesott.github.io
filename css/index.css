@@ -321,17 +321,6 @@ section {
     color: var(--button-hover-color);
 }
 
-#name-title {
-    white-space: nowrap;
-}
-
-#name-title span {
-    display: inline-block;
-    font-size: 2em;
-    transition: transform 0.3s ease;
-    cursor: default;
-}
-
 /* Footer */
 footer {
     background: var(--button-color);
