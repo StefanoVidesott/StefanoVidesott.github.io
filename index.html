@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stefano Videsott's Personal Portfolio showcasing skills, projects, and contact information.">
+    <meta name="keywords" content="Stefano Videsott, Portfolio, Web Developer, Software Engineer, University of Trento, Airpim SRL, Projects, Skills">
+    <meta name="author" content="Stefano Videsott">
     <title>Stefano Videsott - Portfolio</title>
-    <meta name="description" content="Stefano Videsott's Personal Portfolio Website">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -15,14 +17,13 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
-
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
         <div class="header-content">
-            <img src="assets/images/profile.png" alt="Stefano Videsott" class="profile-img">
+            <img src="assets/images/profile.png" alt="Stefano Videsott Profile Picture" class="profile-img">
             <h1>Stefano Videsott</h1>
             <p>Computer Science Student | Software Developer at Airpim SRL</p>
             <div class="header-buttons">
@@ -33,13 +34,21 @@
     </header>
 
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">SV Portfolio</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- About Section -->
@@ -47,56 +56,38 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="content">
-                <div class="content">
-                    <p>
-                        Hi, I'm <strong>Stefano Videsott</strong>, a passionate computer science student at the University of Trento and a software developer at Airpim SRL. I specialize in developing innovative software solutions and I'm always eager to learn and explore new technologies in the IT world.
-                    </p>
-                    <p>
-                        With a solid foundation in programming languages like C++, C#, Python, Java, and JavaScript, I enjoy building web and mobile applications that solve real-world problems. My journey in tech is driven by curiosity and a commitment to continuous improvement.
-                    </p>
-                    <p>
-                        When I'm not coding, I love contributing to open-source projects, exploring the latest in AI and machine learning, and sharing my knowledge with the community through tutorials and blog posts.
-                    </p>
-                </div>
+                <p>Hi, I'm <strong>Stefano Videsott</strong>, a passionate computer science student at the University of Trento and a software developer at Airpim SRL. I specialize in developing innovative software solutions and I'm always eager to learn and explore new technologies in the IT world.</p>
+                <p>With a solid foundation in programming languages like C++, C#, Python, Java, and JavaScript, I enjoy building web and mobile applications that solve real-world problems. My journey in tech is driven by curiosity and a commitment to continuous improvement.</p>
+                <p>When I'm not coding, I love contributing to open-source projects, exploring the latest in AI and machine learning, and sharing my knowledge with the community through tutorials and blog posts.</p>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" aria-label="Skills Section">
         <div class="container">
             <h2>My Skills</h2>
             <div class="skills-container">
                 <div class="skill">
-                    <i class="fas fa-code"></i>
+                    <i class="fas fa-code" aria-hidden="true"></i>
                     <h3>Programming</h3>
                     <p>Proficient in C++, C#, Python, Java and JavaScript.</p>
                 </div>
                 <div class="skill">
-                    <i class="fas fa-laptop-code"></i>
+                    <i class="fas fa-laptop-code" aria-hidden="true"></i>
                     <h3>Web Development</h3>
-                    <p>Experienced with HTML, CSS and Jinja.</p>
+                    <p>Experienced with HTML, CSS, and Jinja.</p>
                 </div>
                 <div class="skill">
-                    <i class="fas fa-database"></i>
+                    <i class="fas fa-database" aria-hidden="true"></i>
                     <h3>Databases</h3>
                     <p>Knowledgeable in MySQL and MongoDB.</p>
                 </div>
                 <div class="skill">
-                    <i class="fas fa-cloud"></i>
+                    <i class="fas fa-cloud" aria-hidden="true"></i>
                     <h3>Cloud Computing</h3>
                     <p>Familiar with Docker.</p>
                 </div>
-                <!-- <div class="skill">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Mobile Development</h3>
-                    <p>Building apps with React Native and Flutter.</p>
-                </div> -->
-                <!-- <div class="skill">
-                    <i class="fas fa-robot"></i>
-                    <h3>Artificial Intelligence</h3>
-                    <p>Working on machine learning and AI projects.</p>
-                </div> -->
             </div>
         </div>
     </section>
@@ -108,25 +99,11 @@
             <div class="projects-container">
                 <!-- Project 1 -->
                 <div class="project">
-                    <img src="assets/images/project-air_force_1943.png" alt="Air Force 1943">
+                    <img src="assets/images/project-air_force_1943.png" alt="Air Force 1943 Game Screenshot">
                     <h3>Air Force 1943</h3>
                     <p>I participated in the development of Air Force 1943 at the age of 15 while in high school.</p>
-                    <a href="https://weatherlight.itch.io/airforce-1943" target="_blank">View on itch.io</a>
+                    <a href="https://weatherlight.itch.io/airforce-1943" target="_blank" aria-label="View Air Force 1943 on itch.io">View on itch.io</a>
                 </div>
-                <!-- Project 2 -->
-                <!-- <div class="project">
-                    <img src="assets/images/project-air_force_1943.png" alt="Air Force 1943">
-                    <h3>Project Two</h3>
-                    <p>A mobile app developed with React Native for tracking personal finances.</p>
-                    <a href="https://github.com/StefanoVidesott/project-two" target="_blank">View on GitHub</a>
-                </div> -->
-                <!-- Project 3 -->
-                <!-- <div class="project">
-                    <img src="assets/images/project-air_force_1943.png" alt="Air Force 1943">
-                    <h3>Project Three</h3>
-                    <p>An AI-powered chatbot built with Python and TensorFlow.</p>
-                    <a href="https://github.com/StefanoVidesott/project-three" target="_blank">View on GitHub</a>
-                </div> -->
             </div>
         </div>
     </section>
@@ -134,15 +111,14 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <div><i class="fas fa-envelope"></i> <a href="mailto:ste.videsott@gmail.com">ste.videsott@gmail.com</a></div>
-            <!-- <div><i class="fas fa-phone"></i> +39 123 456 7890</div> -->
-            <div class="social-links">
-                <a href="https://github.com/StefanoVidesott" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/stefano.videsott" target="_blank"><i class="fab fa-instagram"></i></a>
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div><i class="fas fa-envelope"></i> <a href="mailto:ste.videsott@gmail.com" aria-label="Send email to ste.videsott@gmail.com">ste.videsott@gmail.com</a></div>
+                <div class="social-links">
+                    <a href="https://github.com/StefanoVidesott" target="_blank" aria-label="Stefano Videsott's GitHub Profile"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/stefano.videsott" target="_blank" aria-label="Stefano Videsott's Instagram Profile"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -153,6 +129,7 @@
 
     <!-- Scripts -->
     <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
